@@ -188,6 +188,7 @@ order by id_totalsteps desc, calories desc
 
 
 
+
 Result of Query
 Row	id	id_Totalsteps	id_Totaldistance	veryactivedistance	moderatelyactivedistance	lightactivedistance	calories
  1 	 8877689391 	 497241 	 409.59999729599997 	 205.760000234 	 10.469999980000004 	 191.84999990599997 	 106028 
@@ -223,6 +224,7 @@ Row	id	id_Totalsteps	id_Totaldistance	veryactivedistance	moderatelyactivedistanc
  31 	 8792009665 	 53758 	 34.409999787 	 0.72000001 	 1.690000016 	 31.999999850000002 	 56907 
  32 	 1927972279 	 28400 	 19.669999818 	 2.9699999760000004 	 0.97000001199999986 	 15.719999829000002 	 67357 
  33 	 4057192912 	 15352 	 11.450000048 	 0.209999993 	 0.25999999 	 10.75 	 7895 
+
 
  ![image](https://user-images.githubusercontent.com/104599847/166584790-9b6c898a-0e06-48fe-a61e-ca298f5c437f.png)
  ![image](https://user-images.githubusercontent.com/104599847/166584806-944d2537-3e4d-423a-bf80-46414da68d3f.png)
