@@ -41,36 +41,20 @@ As a data analyst working on the marketing analyst team, I will analyze the data
 The data set used for the purpose of this analysis is a public dataset that explores smart device users’ daily habits.          ● Fitbit Fitness Tracker Data (CC0: Public Domain, dataset made available through Mobius): This Kaggle data set contains personal fitness tracker from thirty Fitbit users. Thirty eligible Fitbit users consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits. 
 PERSONAL RESEARCH ON FITBIT
 Fitbit devices use a 3-axis accelerometer to count your steps. This sensor also allows your device to determine the frequency, duration, intensity, and patterns of your movement.Fitbit devices combine your basal metabolic rate (BMR)—the rate at which you burn calories at rest to maintain vital body functions (including breathing, blood circulation, and heartbeat)—and your activity data to estimate your calories burned. Your BMR is based on the physical data you entered in to your Fitbit account (height, weight, sex, and age) and accounts for at least half the calories you burn in a day.
+
 3.2 Data organization 
 The data is available as 15 csv files, organized in both narrow and wide format, each containing different data. Entries record a unique ID, date/time, and quantitative health data. The length of time within the dataset is 31 days from 4/12/2016 to 5/9/2016.
+
 3.3 Data credibility and integrity
 The data is limited and prone to sampling bias due to the sample size of 33 users and no demographic data. Additionally, the data is 5 years old and only collected from a limited time frame of 31 days.
 
 4. Process
 4.1 What tool I’m using and why.
 For the purpose of this case study and analysis I will be using SQL (Big Query) because of the volume of the data set. Sql will load and query the date for analysis and insights. I will usedata studio cloud to create the tables and charts for a well explained detailed analysis. For the visualization I will make use of power Bi.
+
 4.2 Load and view the data set
 ![image](https://user-images.githubusercontent.com/104599847/166582447-d420337c-6471-4847-9567-04031f9f95d0.png)
 
-Table Name	Type	Description
-dailyActivity_merged	Microsoft Excel CSV	Daily Activity for 31 days of 33 users. Tracking daily: Steps, Distance, Intensities, Calories
-dailyCalories_merged	Microsoft Excel CSV	Daily Calories for 31 days of 33 users
-dailyIntensities_merged	Microsoft Excel CSV	Daily Intensity for 31 days of 33 users. Measured in Minutes and Distance, dividing groups in 4 categories: Sedentary, Lightly Active, Fairly Active, Very Active
-dailySteps_merged	Microsoft Excel CSV	Daily Steps for 31 days of 33 users
-heartrate_seconds_merged	Microsoft Excel CSV	Exact day and time heartrate logs for just 7 users
-hourlyCalories_merged	Microsoft Excel CSV	Hourly Calories burned for 31 days of 33 users
-hourlyIntensities_merged	Microsoft Excel CSV	Hourly total and average intensity for 31 days of 33 users
-hourlySteps_merged	Microsoft Excel CSV	Hourly Steps for 31 days of 33 users
-minuteCaloriesNarrow_merged	Microsoft Excel CSV	Calories burned every minute for 31 days of 33 users (Every minute in single row)
-minuteCaloriesWide_merged	Microsoft Excel CSV	Calories burned every minute for 31 days of 33 users (Every minute in single column)
-minuteIntensitiesNarrow_merged	Microsoft Excel CSV	Intensity counted by minute for 31 days of 33 users (Every minute in single row)
-minuteIntensitiesWide_merged	Microsoft Excel CSV	Intensity counted by minute for 31 days of 33 users (Every minute in single column)
-minuteMETsNarrow_merged	Microsoft Excel CSV	Ratio of the energy you are using in a physical activity compared to the energy you would use at rest. Counted in minutes
-minuteSleep_merged	Microsoft Excel CSV	Log Sleep by Minute for 24 users for 31 days. Value column not specified
-minuteStepsNarrow_merged	Microsoft Excel CSV	Steps tracked every minute for 31 days of 33 users (Every minute in single row)
-minuteStepsWide_merged	Microsoft Excel CSV	Steps tracked every minute for 31 days of 33 users (Every minute in single column)
-sleepDay_merged	Microsoft Excel CSV	Daily sleep logs, tracked by: Total count of sleeps a day, Total minutes, Total Time in Bed
-weightLogInfo_merged	Microsoft Excel CSV	Weight track by day in Kg and Pounds for 30 days. Calculation of BMI.5 users report weight manually 3 users not iN total there are 8 users
 
 3.3Clean the data frames
 •	Clean column names
