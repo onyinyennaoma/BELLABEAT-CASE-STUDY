@@ -22,23 +22,30 @@ TABLE OF CONTENT
 
 1.COMPANY BACKGROUND
 Bellabeat is a high-tech company developing wellness tracking device for women. Bella beat was founded in 2012.  By 2016, Bellabeat launched multiple products and expanded their business globally. The products became available on their own e-commerce channel, as well as online retailers. Bellabeat focuses on digital marketing extensively, including Google Search, video ads, and consumer engagement on social media platforms.
+
 Bellabeat has launched 5 products:
 •	Bellabeat app: The Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. It helps users better understand their current habits and make healthy decisions.
 •	Leaf: Bellabeat's classic wellness tracker can be worn as a bracelet, necklace, or clip. It connects to the Bellabeat app to track activity, sleep, and stress.
 •	Time: This wellness watch combines the timeless look of a classic timepiece with smart technology to track user activity, sleep, and stress. It connects to the Bellabeat app to provide you with insights into your daily wellness.
 •	Spring: This is a water bottle that tracks daily water intake using smart technology to ensure that you are appropriately hydrated throughout the day. It connects to the Bellabeat app to track your hydration levels.
 •	Bellabeat membership: Bellabeat also offers a subscription-based membership program for users. It gives users 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals.
+
 2. ASK
 For this study, the following questions will be asked 1. What are some trends in smart device usage? 2. How could these trends apply to Bellabeat customers? 3. How could these trends help influence Bellabeat marketing strategy?
+
 2.1	THE BUSINESS TASK
-As a data analyst working on the marketing analyst team, I will analyze the data set on smart devices to gain insight into how consumers are using their smart devices and focus on one of Bellabeat’s products. By outlining the process of the analysis and the key findings, high-level recommendations for marketing strategies will be presented to the key stakeholders. In this case study, I will focus on Bellabeat App for recommendations.
+As a data analyst working on the marketing analyst team, I will analyze the data set on smart devices to gain insight into how consumers are using their smart devices and focus on one of Bellabeat’s products. By outlining the process of the analysis and the key findings, high-level recommendations for marketing strategies will be presented to the key stakeholders. In this case study, I will focus on Bellabeat App and watch for recommendations.
+
 2.1.1 KEY STAKE HOLDERS
 •	UrškaSršen: cofounder and Chief Creative Officer.
 •	Sando Mur: cofounder and a key member of the Bellabeat executive team.
 •	Bellabeat marketing analytics team.
+
 3	PREPARE 
+
 3.1	Accessibility and privacy
 The data set used for the purpose of this analysis is a public dataset that explores smart device users’ daily habits.          ● Fitbit Fitness Tracker Data (CC0: Public Domain, dataset made available through Mobius): This Kaggle data set contains personal fitness tracker from thirty Fitbit users. Thirty eligible Fitbit users consented to the submission of personal tracker data, including minute-level output for physical activity, heart rate, and sleep monitoring. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits. 
+
 PERSONAL RESEARCH ON FITBIT
 Fitbit devices use a 3-axis accelerometer to count your steps. This sensor also allows your device to determine the frequency, duration, intensity, and patterns of your movement.Fitbit devices combine your basal metabolic rate (BMR)—the rate at which you burn calories at rest to maintain vital body functions (including breathing, blood circulation, and heartbeat)—and your activity data to estimate your calories burned. Your BMR is based on the physical data you entered in to your Fitbit account (height, weight, sex, and age) and accounts for at least half the calories you burn in a day.
 
@@ -63,6 +70,8 @@ For the purpose of this case study and analysis I will be using SQL (Big Query) 
 •	Remove irrelevant columns
 •	Make arithmetic calculations and add relevant column
 ![image](https://user-images.githubusercontent.com/104599847/166583122-5e4d2b1c-5745-4a1e-be78-d0a9c14a0926.png)
+
+
 4. Analyze
 Key findings from the daily activities of the customers.
 select distinct ActivityDate, count(ID) as customer_usage
